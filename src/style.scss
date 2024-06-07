@@ -1,0 +1,13 @@
+// Importing partials files
+@use './scss/partials/globals';
+@use './scss/partials/variables';
+@use './scss/partials/mixins';
+
+// Importing components files
+@use './scss/components/navbar';
+@use './scss/components/hero';
+@use './scss/components/skills';
+@use './scss/components/timeline';
+@use './scss/components/projects';
+@use './scss/components/games';
+@use './scss/components/footer';
