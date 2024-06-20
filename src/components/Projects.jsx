@@ -32,8 +32,8 @@ const Projects = () => {
               <span>WEBSITE</span>
               <h2>Bakery Shop</h2>
               <div className="icons">
-                <a href="https://main--freshbaguettes.netlify.app/"><MdArrowOutward /></a>
-                <a href="https://github.com/AliMahmoud26/Baguettes--store"><FaGithub /></a>
+                <a href="https://main--freshbaguettes.netlify.app/" target='_blank' title='Live Site'><MdArrowOutward /></a>
+                <a href="https://github.com/AliMahmoud26/Baguettes--store" target='_blank' title='Github Repo'><FaGithub /></a>
               </div>
             </div>
           </div>

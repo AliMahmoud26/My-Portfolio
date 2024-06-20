@@ -15,7 +15,7 @@ const Timeline = () => {
             <h2>Web Development</h2>
             <h3>FRONTEND DEVELOPER</h3>
             <span className="date">JULY 2022 - STARTED</span>
-            <p>At this time I started to learn Frontend development and during this journey, I've learned and passed through many things as well, I've gained considerable experience in this field by applying what I've learned to real projects which you find on my Github account.</p>
+            <p>I started learning frontend development in 2022, and since then, I've gained knowledge in various technologies like HTML5, CSS3, JavaScript and ES6, React.js, TypeScript, Sass, Tailwind CSS, and Bootstrap 5. Additionally, I've explored backend technologies such as Node.js, Express, and MongoDB. Throughout this journey, I encountered and mastered many aspects of the field. By applying my knowledge to real projects, which you can find on my GitHub account, I have gained considerable experience.</p>
           </div>
         </div>
         <div className="education main-timeline">
@@ -28,7 +28,7 @@ const Timeline = () => {
           <h2>HIMIT Institute</h2>
           <h3>BAs IN COMPUTER SCIENCE</h3>
           <span className="date">JOINED IN OCTOBER 2021 - GRADUATION IN JUNE 2025</span>
-          <p>I joined the Higher Institute Of Management And Information Technology of Kafr El-Sheikh on the 1st of October 2021 and I'll be graduating in June 2025.</p>
+          <p>I enrolled in the Higher Institute of Management and Information Technology of Kafr El-Sheikh on October 2021, and I will graduate in June 2025. I have enrolled in the Computer Science Department. We have been taught many important topics in College such as Math, Physics, Data Structure and Algorithms, Object-Oriented Porgramming, System Design and Analysis, Modeling and Simulation Systems and many other things.</p>
         </div>
         </div>
       </div>

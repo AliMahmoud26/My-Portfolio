@@ -17,7 +17,11 @@
     }
 
     .container {
-        @include flex-between;
+        // @include flex-between;
+        // width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+        gap: 8rem;
         margin-top: 4rem;
 
         .main-timeline {
@@ -56,7 +60,7 @@
                 p {
                     margin-top: 1.5rem;
                     color: #ddd;
-                    width: 80%;
+                    // width: 100%;
                     line-height: 1.8;
                 }
             }
@@ -81,7 +85,7 @@
                     top: 1.25rem;
                     left: -1.73rem;
                     width: 1px;
-                    height: 13rem;
+                    height: 17rem;
                     background-color: #666;
                     border-radius: 1rem;
                     z-index: -1;
@@ -93,7 +97,13 @@
         .experience {
             .timeline {
                 .line {
-                    height: 13rem;
+                    height: 18rem;
+                }
+            }
+
+            .content {
+                p {
+                    // width: 80%;
                 }
             }
         }
@@ -101,7 +111,7 @@
         .education {
             .timeline {
                 .line {
-                    height: 13rem;
+                    height: 16rem;
                 }
             }
         }
