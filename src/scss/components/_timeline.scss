@@ -2,3 +2,109 @@
 @use '../partials/variables' as *;
 @use '../partials/mixins' as *;
 
+// Styling the expertise component
+.expertise {
+    padding: 3rem 4rem 4rem;
+
+    .main-heading {
+        &::before {
+            width: 6rem;
+        }
+
+        &::after {
+            width: 10rem;
+        }
+    }
+
+    .container {
+        @include flex-between;
+        margin-top: 4rem;
+
+        .main-timeline {
+            > h4 {
+                color: $light;
+                margin-bottom: 2rem;
+                font: {
+                    weight: normal;
+                    size: 1.1rem;
+                }
+                letter-spacing: .25rem;
+            }
+
+            .content {
+                h2,
+                h3 {
+                    color: $light;
+                }
+
+                h2 {
+                    font-size: 1.5rem;
+                    margin-bottom: .25rem;
+                }
+
+                h3 {
+                    font-size: 1rem;
+                    margin-bottom: .25rem;
+                }
+
+                span {
+                    color: #555;
+                    letter-spacing: .15rem;
+                    font-size: .75rem;
+                }
+
+                p {
+                    margin-top: 1.5rem;
+                    color: #ddd;
+                    width: 80%;
+                    line-height: 1.8;
+                }
+            }
+
+            .timeline {
+                position: relative;
+
+                .circle {
+                    position: absolute;
+                    top: .75rem;
+                    left: -2rem;
+                    width: .6rem;
+                    height: .6rem;
+                    background-color: $lightBlue;
+                    border-radius: 50%;
+                    z-index: 100;
+                    // border: 3px solid $lightBlue;
+                }
+
+                .line {
+                    position: absolute;
+                    top: 1.25rem;
+                    left: -1.73rem;
+                    width: 1px;
+                    height: 13rem;
+                    background-color: #666;
+                    border-radius: 1rem;
+                    z-index: -1;
+                    // border: 3px solid $lightBlue;
+                }
+            }
+        }
+
+        .experience {
+            .timeline {
+                .line {
+                    height: 13rem;
+                }
+            }
+        }
+
+        .education {
+            .timeline {
+                .line {
+                    height: 13rem;
+                }
+            }
+        }
+    }
+}
+

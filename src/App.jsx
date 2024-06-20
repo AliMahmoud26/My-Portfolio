@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+// import Hero from "./components/About"
 import Skills from "./components/Skills"
 import Timeline from "./components/Timeline"
 import Projects from "./components/Projects"
@@ -12,6 +13,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      {/* <About /> */}
       <Skills />
       <Timeline />
       <Projects />

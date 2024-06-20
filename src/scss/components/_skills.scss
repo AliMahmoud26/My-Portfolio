@@ -2,3 +2,44 @@
 @use '../partials/variables' as *;
 @use '../partials/mixins' as *;
 
+// Styling the skills component
+.skills {
+    padding: 3rem 4rem 4rem;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 4rem;
+
+        .card-details {
+            // background-color: #555;
+            background-color: $darkBlue;
+            padding: 1rem 2rem;
+            box-shadow: .25rem .25rem .25rem rgba(0 0 0 / 20%);
+            border-left: .25rem solid $lightBlue;
+            border-radius: .25rem;
+            transition: $transition;
+
+            &:hover {
+                transform: translateY(-5px) scale(1.05);
+                // background-color: $darkBlue;
+                // border-left: none;
+            }
+
+            h2 {
+                color: $lightBlue;
+                margin-bottom: .5rem;
+                font-size: 1.5rem;
+            }
+
+            .tech-skills {
+                p {
+                    color: $light;
+                    margin-top: .5rem;
+                }
+            } 
+        }
+    }
+
+}

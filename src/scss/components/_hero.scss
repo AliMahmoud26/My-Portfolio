@@ -2,3 +2,141 @@
 @use '../partials/variables' as *;
 @use '../partials/mixins' as *;
 
+// Styling the hero component
+.hero {
+    padding: 5rem 4rem;
+    // background-color: rgb($lightBlue, .09);
+
+    .container {    
+        .my-info {
+            @include flex-between;
+    
+            .text {
+                margin-bottom: 4rem;
+
+                .position {
+                    color: $light;
+                }
+                
+                .name {
+                    font: {
+                        size: 4rem;
+                        weight: 800;
+                        family: "Rowdies", cursive;
+                    }
+                    color: $lightBlue;
+                }
+    
+                .info {
+                    line-height: 1.8;
+                    margin-top: .5rem;
+                    color: $light;
+                    max-width: 50rem;
+                    // font-weight: 600;
+                }
+    
+                // .hand-icon {
+                //     transform: scaleX(-1);
+                //     color: #444;
+                // }
+            }
+    
+    
+            .img {
+                position: relative;
+                height: 28rem;
+                width: 23rem;
+                // animation: upDown 3s ease-in-out infinite;
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-color: $lightBlue;
+                    width: 6rem;
+                    height: 10rem;
+                    z-index: -1;
+                }
+
+                &::before {
+                    top: -.25rem;
+                    left: -.25rem;
+                    // width: 15rem;
+                    border-top: .2rem solid $lightBlue;
+                    border-left: .2rem solid $lightBlue;
+                }
+
+                &::after {
+                    bottom: -.25rem;
+                    right: -.25rem;
+                    border-bottom: .2rem solid $lightBlue;
+                    border-right: .2rem solid $lightBlue;
+                }
+                
+                img {
+                    height: 100%;
+                    width: 100%;
+                    z-index: 100;
+                    // border-radius: 50%;
+
+                }
+            }
+        }
+
+        .btn {
+            background-color: inherit;
+            border: 2px solid $lightBlue;
+            border-radius: 2rem;
+            padding: .75rem 2rem;
+            width: fit-content;
+            margin-top: -4.5rem;
+            
+            > a {
+                @include flex-default;
+                gap: .5rem;
+                color: $light;
+                transition: $transition;
+                // font-size: 1.125rem;
+
+                &:hover {
+                    color: $lightBlue;
+                }
+            }
+            
+        }
+    }
+
+    .socials {
+        @include flex-center;
+        margin-top: 2rem;
+
+        > a {
+            @include flex-default;
+            margin-right: 1.5rem;
+            color: $light;
+            font-size: 1.5rem;
+            border: 2px solid $light;
+            border-radius: 50%;
+            padding: 1rem;
+            transition: $transition;
+
+            &:hover {
+                color: $lightBlue;
+                border: 2px solid $lightBlue;
+            }
+        }
+    }
+}
+
+
+@keyframes upDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

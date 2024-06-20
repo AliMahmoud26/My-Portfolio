@@ -2,3 +2,94 @@
 @use '../partials/variables' as *;
 @use '../partials/mixins' as *;
 
+// Styling the projects component
+.projects {
+    padding: 3rem 4rem 4rem;
+
+    .title {
+        margin-top: 2rem;
+        font-size: 3rem;
+        // font-family: "Rowdies", sans-serif;
+        color: $light;
+    }
+
+    .container {
+        margin-top: 3rem;
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 4rem;
+
+            .project {
+                position: relative;
+                transition: $transition;
+
+                .img {
+                    width: 600px;
+                    height: 400px;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .content {
+                    // display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.7);
+                    // opacity: .7;
+                    width: 100%;
+                    height: 100%;
+                    @include flex-column;
+                    justify-content: center;
+                    transition: $transition;
+                    box-sizing: border-box;
+                    display: none;
+
+                    > span {
+                        color: $light;
+                        margin-bottom: .25rem;
+                    }
+
+                    h2 {
+                        color: $lightBlue;
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    .icons {
+                        @include flex-default;
+                        gap: 1rem;
+                        
+                        a {
+                            @include flex-default;
+                            font-size: 1.5rem;
+                            color: $light;
+                            transition: $transition;
+                            border: 2px solid $light;
+                            border-radius: 50%;
+                            padding: .5rem;
+
+                            &:hover {
+                                color: $lightBlue;
+                                border: 2px solid $lightBlue;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .content {
+                        transition: $transition;
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}

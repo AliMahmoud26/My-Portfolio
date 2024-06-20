@@ -2,3 +2,102 @@
 @use '../partials/variables' as *;
 @use '../partials/mixins' as *;
 
+// Styling the navbar of the page
+.navbar {
+    @include flex-between;
+    // padding: 1rem 4rem;
+    font-family: "Rowdies", sans-serif;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    transition: $transitionEase;
+    // background-color: rgb($lightBlue, .09);    
+    
+    &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: $lightBlue;
+        box-shadow: .25rem .25rem .5rem rgb(0 0 0 / 15%);
+
+        .nav-icon {
+            &:hover {
+                color: $beige;
+            }
+        }
+
+        nav {
+            > a {
+                &:hover {
+                    color: rgb(9, 135, 167);
+                }
+            }
+        }
+    }
+
+    .nav-icon {
+        display: none;
+        transition: $transition;
+
+        @include breakpoint-down(medium) {
+            display: flex;
+            
+            &:hover {
+                color: $lightBlue;
+            }
+        }
+    }
+
+    .logo {
+        > a {
+            font-size: 2.5rem;
+            color: $light;
+        }
+    }
+
+    nav {
+        @include flex-default;
+
+        @include breakpoint-down(medium) {
+            // display: none;
+            @include flex-column;
+            position: absolute;
+            top: -100rem;
+            right: 50%;
+            transform: translateX(50%);
+            background-color: rgb($lightBlue, 50%);
+            padding-top: 1rem;
+            width: 50%;
+            border-radius: .25rem;
+            box-shadow: .25rem .25rem .5rem rgb(0 0 0 / 10%);
+            transition: $transitionEase;
+
+            &.show {
+                top: 5.5rem;
+            }
+        }
+
+        @include breakpoint-down(small) {
+            width: 70%;
+        }
+
+        > a {
+            margin-left: 2rem;
+            font-size: 1.25rem;
+            color: $light;
+            transition: $transition;
+
+            @include breakpoint-down(medium) {
+                margin-bottom: 1.5rem;
+            }
+
+            @include breakpoint-down(small) {
+                margin-bottom: 1rem;
+            }
+
+            &:hover {
+                color: $lightBlue;
+            }
+        }
+    }
+}
