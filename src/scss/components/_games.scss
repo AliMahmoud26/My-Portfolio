@@ -2,3 +2,108 @@
 @use '../partials/variables' as *;
 @use '../partials/mixins' as *;
 
+// Styling the games component
+.games {
+    padding: 3rem 4rem 4rem;
+
+    .main-heading {
+        &::before {
+            width: 9rem;
+        }
+
+        &::after {
+            width: 15rem;
+        }
+    }
+
+    .title {
+        margin-top: 2rem;
+        font-size: 2rem;
+        color: $light;
+    }
+
+    .container {
+        margin-top: 3rem;
+
+        .games-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 2rem;
+
+            .game {
+                position: relative;
+                transition: $transition;
+
+                .img {
+                    width: 600px;
+                    height: 400px;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .content {
+                    // display: none;
+                    @include flex-column;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.7);
+                    // opacity: .7;
+                    width: 600px;
+                    height: 400px;
+                    box-sizing: border-box;
+                    display: none;
+
+                    > span {
+                        color: $light;
+                        margin-bottom: .25rem;
+                    }
+
+                    h2 {
+                        color: $lightBlue;
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    .icons {
+                        @include flex-default;
+                        gap: 1rem;
+
+                        span {
+                            color: $light
+                        }
+                        
+                        a {
+                            @include flex-default;
+                            font-size: 1.5rem;
+                            color: $light;
+                            transition: $transition;
+                            border: 2px solid $light;
+                            border-radius: 50%;
+                            padding: .5rem;
+
+                            &:hover {
+                                color: $lightBlue;
+                                border: 2px solid $lightBlue;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .content {
+                        transition: $transition;
+                        display: flex;
+                    }
+
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

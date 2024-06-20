@@ -7,7 +7,7 @@ import Bakery from '../../public/gallery/Project2.jpg'
 const Projects = () => {
   return (
     <section className='projects' id='projects'>
-      <h1 className='main-heading'>RECENT WORKS</h1>
+      <h1 className='main-heading'>RECENT WORK</h1>
       <h2 className='title'>Here are some of my favorite projects I have done lately. Feel free to check them out.</h2>
       <div className="container">
         <div className="projects-container">

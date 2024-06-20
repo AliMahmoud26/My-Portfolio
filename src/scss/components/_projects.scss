@@ -6,6 +6,16 @@
 .projects {
     padding: 3rem 4rem 4rem;
 
+    .main-heading {
+        &::before {
+            width: 8rem;
+        }
+
+        &::after {
+            width: 14rem;
+        }
+    }
+
     .title {
         margin-top: 2rem;
         font-size: 3rem;
