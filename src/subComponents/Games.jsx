@@ -9,7 +9,7 @@ const Games = () => {
   return (
     <section className='games'>
       <h1 className='main-heading'>HAVE SOME FUN</h1>
-      <h2 className='title'>Don't take everything seriously and have some fun!</h2>
+      <h2 className='title'>Don't take everything too seriously and have some fun!</h2>
       <div className="container">
         <div className="games-container">
           <div className="game">

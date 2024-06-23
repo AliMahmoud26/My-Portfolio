@@ -2,3 +2,140 @@
 @use '../partials/variables' as *;
 @use '../partials/mixins' as *;
 
+// Styling the footer component
+.footer {
+    width: 100%;
+    background-color: $darkBlue;
+    padding: 3rem 2rem 1rem;
+    margin-top: 1rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        .reach-me {
+            margin-bottom: 2.5rem;
+
+            h4 {
+                color: $lightBlue;
+                margin-bottom: .5rem;
+                letter-spacing: .25rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+                color: $light;
+                
+            }
+        }
+
+        .other-links {
+            @include flex-between;
+
+            .email {
+                h4 {
+                    color: $lightBlue;
+                    font-weight: normal;
+                    font-size: 1rem;
+                    letter-spacing: .25rem;
+                    margin-bottom: .5rem;
+                }
+
+                a {
+                    color: $light;
+                    font-size: 1.125rem;
+                    transition: $transition;
+
+                        &:hover {
+                            color: $lightBlue;
+                        }
+                }
+            }
+
+            .page-links {              
+                h4 {
+                    color: $lightBlue;
+                    font-size: 1.125rem;
+                    font-weight: normal;
+                    letter-spacing: .25rem;
+                    margin-bottom: .5rem;
+                }
+                
+                .links {
+                    @include flex-default;
+                    // display: flex;
+                    // align-items: center;
+                    gap: 1rem;
+
+                    a {
+                        color: $light;
+                        font-size: 1.125rem;
+                        transition: $transition;
+
+                        &:hover {
+                            color: $lightBlue;
+                        }
+                    }
+                }
+            }
+
+            .socials {
+                h4 {
+                    color: $lightBlue;
+                    font-weight: normal;
+                    font-size: 1.125rem;
+                    letter-spacing: .25rem;
+                    margin-bottom: .5rem;
+                }
+
+                .social-links {
+                    @include flex-default;
+
+                    a {
+                        // display: flex;
+                        color: $light;
+                        margin-left: 1rem;
+                        font-size: 1.125rem;
+                        transition: $transition;
+
+                        &:hover {
+                            color: $lightBlue;
+                        }
+                    }
+                }
+
+            }
+
+            .email-box {
+                background-color: $lightBlue;
+                padding: 1.25rem 4rem;
+                font-family: 'Rowdies', sans-serif;
+                font-size: .875rem;
+                cursor: pointer;
+                transition: $transition;
+
+                
+                a {
+                    color: $light;
+                    transition: $transition;
+                    letter-spacing: .25rem;
+                }
+
+                &:hover {
+                    background-color: transparent;
+
+                    a {
+                        color: $lightBlue;
+                    }
+                }
+            }
+        }
+    }
+
+    .right {
+        margin-top: 3rem;
+        text-align: center;
+        color: $lightBlue;
+        font-size: .875rem;
+    }
+}
