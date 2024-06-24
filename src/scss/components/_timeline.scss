@@ -6,6 +6,10 @@
 .expertise {
     padding: 3rem 4rem 4rem;
 
+    @include breakpoint-down(small) {
+        width: 600px;
+    }
+
     .main-heading {
         &::before {
             width: 6rem;
@@ -98,12 +102,10 @@
             .timeline {
                 .line {
                     height: 18rem;
-                }
-            }
 
-            .content {
-                p {
-                    // width: 80%;
+                    @include breakpoint-down(small) {
+                        height: 26rem;
+                    }
                 }
             }
         }
@@ -112,6 +114,10 @@
             .timeline {
                 .line {
                     height: 16rem;
+
+                    @include breakpoint-down(small) {
+                        height: 25rem;
+                    }
                 }
             }
         }

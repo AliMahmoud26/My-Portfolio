@@ -9,9 +9,21 @@
     padding: 3rem 2rem 1rem;
     margin-top: 1rem;
 
+    @include breakpoint-down(small) {
+        padding: 1rem;
+        width: 600px;
+        padding: 2rem 0;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
+
+        @include breakpoint-down(medium) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
 
         .reach-me {
             margin-bottom: 2.5rem;
@@ -26,13 +38,30 @@
                 font-size: 2rem;
                 color: $light;
                 
+                @include breakpoint-down(medium) {
+                    font-size: 1.5rem
+                }
+
+                @include breakpoint-down(small) {
+                    font-size: 1.125rem
+                }
             }
         }
 
         .other-links {
             @include flex-between;
 
+            @include breakpoint-down(medium) {
+                // @include flex-column;
+                display: flex;
+                flex-direction: column;
+            }
+
             .email {
+                @include breakpoint-down(medium) {
+                    margin-bottom: 2rem;
+                }
+
                 h4 {
                     color: $lightBlue;
                     font-weight: normal;
@@ -52,13 +81,21 @@
                 }
             }
 
-            .page-links {              
+            .page-links {       
+                @include breakpoint-down(medium) {
+                    margin-bottom: 2rem;
+                }
+                       
                 h4 {
                     color: $lightBlue;
                     font-size: 1.125rem;
                     font-weight: normal;
                     letter-spacing: .25rem;
                     margin-bottom: .5rem;
+
+                    @include breakpoint-down(medium) {
+                        text-align: center;
+                    }
                 }
                 
                 .links {
@@ -80,12 +117,20 @@
             }
 
             .socials {
+                @include breakpoint-down(medium) {
+                    margin-bottom: 2rem;
+                }
+
                 h4 {
                     color: $lightBlue;
                     font-weight: normal;
                     font-size: 1.125rem;
                     letter-spacing: .25rem;
                     margin-bottom: .5rem;
+
+                    @include breakpoint-down(medium) {
+                        text-align: center;
+                    }
                 }
 
                 .social-links {
@@ -114,6 +159,11 @@
                 cursor: pointer;
                 transition: $transition;
 
+                @include breakpoint-down(medium) {
+                    padding: 1rem 2rem;
+                    font-size: .75rem;
+                }
+
                 
                 a {
                     color: $light;
@@ -137,5 +187,9 @@
         text-align: center;
         color: $lightBlue;
         font-size: .875rem;
+
+        @include breakpoint-down(medium) {
+            font-size: .75rem;
+        }
     }
 }

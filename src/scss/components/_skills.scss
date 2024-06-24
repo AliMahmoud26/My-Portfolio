@@ -6,11 +6,23 @@
 .skills {
     padding: 3rem 4rem 4rem;
 
+    @include breakpoint-down(medium) {
+        padding: 3rem 2rem;
+    }
+
     .container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 2rem;
         margin-top: 4rem;
+
+        @include breakpoint-down(medium) {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            align-items: center;
+            margin: 4rem auto 0;
+            gap: 2rem;
+        }
 
         .card-details {
             // background-color: #555;

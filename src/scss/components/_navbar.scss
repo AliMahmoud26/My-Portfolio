@@ -11,7 +11,11 @@
     width: 100%;
     z-index: 10;
     transition: $transitionEase;
-    // background-color: rgb($lightBlue, .09);    
+    // background-color: rgb($lightBlue, .09);
+    
+    @include breakpoint-down(small) {
+        width: 600px;
+    }
     
     &.sticky {
         position: fixed;
@@ -41,6 +45,7 @@
 
         @include breakpoint-down(medium) {
             display: flex;
+            color: $light;
             
             &:hover {
                 color: $lightBlue;
@@ -67,7 +72,7 @@
             transform: translateX(50%);
             background-color: rgb($lightBlue, 50%);
             padding-top: 1rem;
-            width: 50%;
+            width: 80%;
             border-radius: .25rem;
             box-shadow: .25rem .25rem .5rem rgb(0 0 0 / 10%);
             transition: $transitionEase;

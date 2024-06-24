@@ -26,14 +26,14 @@ const Navbar = () => {
   return (
     <div className={`navbar container ${isSticky ? 'sticky' : ''}`}>
       <div className="logo">
-        <a href='#home' id='home'>Ali.</a>
+        <a href='#'>Ali.</a>
       </div>
       {/* <FaBars className={`nav-icon ${navbar ? (FaBars) : (FaTimes)}`} size={25} onClick={handleNavToggle} /> */}
       <div className="nav-icon" onClick={handleNavToggle}>
         {navbar ? <FaTimes size={25} /> : <FaBars size={25} />}
       </div>
       <nav className={`${navbar ? 'show' : ''}`}>
-        <a href="#home">Home</a>
+        <a href="#">Home</a>
         {/* <a href="#hero">About</a> */}
         <a href="#skills">Skills</a>
         <a href="#expertise">Expertise</a>

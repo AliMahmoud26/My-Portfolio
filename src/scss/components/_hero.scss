@@ -4,18 +4,37 @@
 
 // Styling the hero component
 .hero {
-    padding: 5rem 4rem;
-    // background-color: rgb($lightBlue, .09);
+    padding: 5rem 8rem;
 
-    .container {    
+    @include breakpoint-down(small) {
+        padding: 2rem;
+    }
+    
         .my-info {
             @include flex-between;
+
+            @include breakpoint-down(medium) {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: flex-start;
+            }
     
             .text {
                 margin-bottom: 4rem;
 
                 .position {
                     color: $light;
+
+                    @include breakpoint-down(small) {
+                        font-size: .875rem;
+                    }
+
+                    @include breakpoint-down(medium) {
+                        width: 100%;
+                        padding: 0;
+                        margin: 0;
+                        text-align: left;
+                    }
                 }
                 
                 .name {
@@ -25,6 +44,14 @@
                         family: "Rowdies", cursive;
                     }
                     color: $lightBlue;
+
+                    @include breakpoint-down(medium) {
+                        font-size: 3rem;
+                    }
+
+                    @include breakpoint-down(small) {
+                        // font-size: .5rem;
+                    }
                 }
     
                 .info {
@@ -33,6 +60,16 @@
                     color: $light;
                     max-width: 50rem;
                     // font-weight: 600;
+
+                    @include breakpoint-down(medium) {
+                        margin-bottom: 2rem;
+                    }
+
+                    @include breakpoint-down(small) {
+                        font-size: .875rem;
+                        max-width: 100%;
+                        margin-bottom: 2rem;
+                    }
                 }
     
                 // .hand-icon {
@@ -46,7 +83,15 @@
                 position: relative;
                 height: 28rem;
                 width: 23rem;
+                z-index: -1;
                 // animation: upDown 3s ease-in-out infinite;
+
+                @include breakpoint-down(medium) {
+                    // height: 22rem;
+                    // width: 18rem;
+                    margin: 0 auto 1rem;
+                }
+
                 &::before,
                 &::after {
                     content: '';
@@ -89,6 +134,11 @@
             padding: .75rem 2rem;
             width: fit-content;
             margin-top: -4.5rem;
+
+            @include breakpoint-down(small) {
+                padding: .5rem 1.5rem;
+                // margin-top: .5rem
+            }
             
             > a {
                 @include flex-default;
@@ -97,13 +147,16 @@
                 transition: $transition;
                 // font-size: 1.125rem;
 
+                @include breakpoint-down(small) {
+                    font-size: .875rem;
+                }
+
                 &:hover {
                     color: $lightBlue;
                 }
             }
             
         }
-    }
 
     .socials {
         @include flex-center;

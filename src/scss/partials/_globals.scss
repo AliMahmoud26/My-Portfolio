@@ -44,6 +44,10 @@ a {
     font-size: 2rem;
     font-family: "Rowdies", cursive;
 
+    @include breakpoint-down(small) {
+        font-size: 1.5rem;
+    }
+
     &::before,
     &::after {
         content: '';

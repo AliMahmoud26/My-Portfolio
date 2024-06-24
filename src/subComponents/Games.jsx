@@ -33,7 +33,7 @@ const Games = () => {
               <h2>Tic Tac Toe Game</h2>
               <div className="icons">
                 <span>Click here to start playing</span>
-                <a href="#" target='_blank' title='Live Site'><MdArrowOutward /></a>
+                <a href="https://playtictactoe.org/" target='_blank' title='Live Site'><MdArrowOutward /></a>
                 {/* <a href="https://github.com/AliMahmoud26/Baguettes--store" target='_blank' title='Github Repo'><FaGithub /></a> */}
               </div>
             </div>
@@ -46,7 +46,7 @@ const Games = () => {
               <h2>Wordle Game</h2>
               <div className="icons">
                 <span>Click here to start playing</span>
-                <a href="#" target='_blank' title='Live Site'><MdArrowOutward /></a>
+                <a href="https://www.nytimes.com/games/wordle/index.html" target='_blank' title='Live Site'><MdArrowOutward /></a>
                 {/* <a href="https://github.com/AliMahmoud26/Baguettes--store" target='_blank' title='Github Repo'><FaGithub /></a> */}
               </div>
             </div>

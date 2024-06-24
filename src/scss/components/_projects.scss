@@ -6,6 +6,10 @@
 .projects {
     padding: 3rem 4rem 4rem;
 
+    @include breakpoint-down(medium) {
+        padding: 3rem 2rem;
+    }
+
     .main-heading {
         &::before {
             width: 8rem;
@@ -21,6 +25,14 @@
         font-size: 3rem;
         // font-family: "Rowdies", sans-serif;
         color: $light;
+
+        @include breakpoint-down(medium) {
+            font-size: 2rem;
+        }
+
+        @include breakpoint-down(small) {
+            font-size: 1.25rem;
+        }
     }
 
     .container {
@@ -38,6 +50,18 @@
                 .img {
                     width: 600px;
                     height: 400px;
+
+                    @include breakpoint-down(medium) {
+                        width: 550px;
+                        height: 350px;
+                        margin: 0 auto;
+                    }
+
+                    @include breakpoint-down(small) {
+                        width: 400px;
+                        height: 300px;
+                        margin: 0 auto;
+                    }
 
                     img {
                         display: block;
