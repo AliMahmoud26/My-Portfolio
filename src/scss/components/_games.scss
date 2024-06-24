@@ -79,6 +79,16 @@
                     box-sizing: border-box;
                     display: none;
 
+                    @include breakpoint-down(medium) {
+                        width: 550px;
+                        height: 350px;
+                    }
+
+                    @include breakpoint-down(small) {
+                        width: 400px;
+                        height: 300px;
+                    }
+
                     > span {
                         color: $light;
                         margin-bottom: .25rem;

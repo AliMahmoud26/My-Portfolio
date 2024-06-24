@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="other-links">
           <div className="email">
             <h4>REACH ME AT</h4>
-            <a href="#">Send Me an Email</a>
+            <a href="mailto:AliMahmoudHelal26@gmail.com">Send Me an Email</a>
           </div>
           <div className="page-links">
-            <h4>Links</h4>
+            <h4>Page Links</h4>
             <div className="links">
               <a href="#home">Home</a>
               <a href="#skills">Skills</a>
@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="email-box">
-            <a href="#">SAY HELLO.</a>
+            <a href="mailto:AliMahmoudHelal26@gmail.com">SAY HELLO.</a>
           </div>
         </div>
       </div>
