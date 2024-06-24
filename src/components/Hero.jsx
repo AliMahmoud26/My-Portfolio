@@ -1,9 +1,7 @@
 import React from 'react'
 import Img from '../assets/MyImg1.jpg';
-import FrontendMentor from '../assets/mentor.svg';
-import CV from '../assets/MyCV.pdf';
-import { FaDownload, FaGithub, FaLinkedin, FaLocationArrow } from 'react-icons/fa';
-import { FaArrowDown19, FaArrowPointer, FaArrowRightFromBracket, FaArrowRotateRight, FaArrowsTurnRight } from 'react-icons/fa6';
+import CV from '../assets/AliCV.pdf';
+import { FaDownload } from 'react-icons/fa';
 // import { MdOutlineWavingHand, MdWavingHand } from 'react-icons/md';
 
 const Hero = () => {
