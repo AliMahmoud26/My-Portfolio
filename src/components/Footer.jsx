@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="email-box">
-            <a href="mailto:AliMahmoudHelal26@gmail.com">SAY HELLO.</a>
+            <a href="mailto:AliMahmoudHelal26@gmail.com" title='My Email'>SAY HELLO.</a>
           </div>
         </div>
       </div>
