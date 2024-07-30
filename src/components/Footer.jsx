@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="page-links">
             <h4>Page Links</h4>
             <div className="links">
-              <a href="#home">Home</a>
+              <a href="#">Home</a>
               <a href="#skills">Skills</a>
               <a href="#expertise">Expertise</a>
               <a href="#projects">Projects</a>
