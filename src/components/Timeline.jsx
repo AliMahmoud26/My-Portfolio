@@ -7,15 +7,31 @@ const Timeline = () => {
       <div className="container">
         <div className="experience main-timeline">
           <h4>EXPERIENCE</h4>
-          <div className="experience-timeline timeline">
-            <div className="circle"></div>
-            <div className="line"></div>
+          <div className="experience-holder experience-one">
+            <div className="experience-timeline timeline">
+              <div className="circle"></div>
+              <div className="line"></div>
+            </div>
+            <div className="content">
+              <h2>Web Development</h2>
+              <h3>FRONTEND DEVELOPER</h3>
+              <span className="date">JULY 2022 - STARTED</span>
+              <p>I started learning frontend development in 2022, and since then, I've gained knowledge in various technologies like HTML5, CSS3, JavaScript and ES6, React.js, TypeScript, Sass, Tailwind CSS, and Bootstrap 5. Additionally, I've explored backend technologies such as Node.js, Express, and MongoDB. Throughout this journey, I encountered and mastered many aspects of the field. By applying my knowledge to real projects, which you can find on my GitHub account, I have gained considerable experience.</p>
+            </div>
           </div>
-          <div className="content">
-            <h2>Web Development</h2>
-            <h3>FRONTEND DEVELOPER</h3>
-            <span className="date">JULY 2022 - STARTED</span>
-            <p>I started learning frontend development in 2022, and since then, I've gained knowledge in various technologies like HTML5, CSS3, JavaScript and ES6, React.js, TypeScript, Sass, Tailwind CSS, and Bootstrap 5. Additionally, I've explored backend technologies such as Node.js, Express, and MongoDB. Throughout this journey, I encountered and mastered many aspects of the field. By applying my knowledge to real projects, which you can find on my GitHub account, I have gained considerable experience.</p>
+          <div className="experience-holder experience-two">
+            <div className="experience-timeline timeline">
+              <div className="circle"></div>
+              <div className="line"></div>
+            </div>
+            <div className="content">
+              <h2>APPS SQUARE</h2>
+              <h3>FRONTEND DEVELOPER</h3>
+              <span className="date">JULY 2024 - PRESENT</span>
+              <p>Assisted in developing web applications using React and Next.js, focusing on dynamic and responsive UI 
+                components. Collaborated with team members, participated in code reviews, and learned modern 
+                development practices.</p>
+            </div>
           </div>
         </div>
         <div className="education main-timeline">

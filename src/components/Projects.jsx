@@ -28,7 +28,7 @@ const Projects = () => {
               <span className='important'>Note: This repo is just to show that i know how to write React code and it will be removed and replaced with better projects. Thanks for your understanding.</span>
             </div>
           </div> */}
-          <div className="project">
+          {/* <div className="project">
             <div className="img">
               <img src={SouthEgypt} alt="Project1" />
             </div>
@@ -37,11 +37,10 @@ const Projects = () => {
               <span className='tech-used'>MERN STACK Technologies</span>
               <h2>South Egypt Travels</h2>
               <div className="icons">
-                {/* <a href="https://main--freshbaguettes.netlify.app/" target='_blank' title='Live Site'><MdArrowOutward /></a> */}
                 <a href="https://github.com/AliMahmoud26/South-Egypt-Travels" target='_blank' title='Github Repo'><FaGithub /></a>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="project">
             <div className="img">
               <img src={Bakery} alt="Project2" />
@@ -62,7 +61,7 @@ const Projects = () => {
             </div>
             <div className="content">
               <span>WEBSITE</span>
-              <span className='tech-used'>React JS & Node JS</span>
+              <span className='tech-used'>Full MERN STACK</span>
               <h2>Real State Application</h2>
               <div className="icons">
                 <a href="#" target='_blank' title='Live Site'><MdArrowOutward /></a>

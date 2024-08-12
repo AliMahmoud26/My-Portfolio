@@ -99,12 +99,36 @@
         }
 
         .experience {
-            .timeline {
-                .line {
-                    height: 18rem;
+            .experience-holder {
+                .timeline {
+                    .line {
+                        height: 22rem;
+    
+                        @include breakpoint-down(large) {
+                            height: 32rem;
+                        }
 
-                    @include breakpoint-down(small) {
-                        height: 26rem;
+                        @include breakpoint-down(small) {
+                            height: 30rem;
+                        }
+                    }
+                }
+
+                &.experience-two {
+                    margin-top: 2rem;
+
+                    .timeline {
+                        .line {
+                            height: 12rem;
+
+                            @include breakpoint-down(large) {
+                                height: 15rem;
+                            }
+
+                            @include breakpoint-down(small) {
+                                height: 15rem;
+                            }
+                        }
                     }
                 }
             }
