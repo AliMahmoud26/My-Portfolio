@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="social-links">
               <a href="https://www.linkedin.com/in/ali-mahmoud-b94668226/" target='_blank'>Linkedin</a>
               <a href="https://github.com/AliMahmoud26" target='_blank'>Github</a>
-              <a href="https://www.frontendmentor.io/profile/AliMahmoud21" target='_blank'>Frontend Mentor</a>
+              <a href="https://leetcode.com/u/Ali_Mahmoud10/" target='_blank'>LeetCode</a>
             </div>
           </div>
           <div className="email-box">

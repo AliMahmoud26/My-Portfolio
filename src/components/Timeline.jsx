@@ -27,9 +27,9 @@ const Timeline = () => {
             <div className="content">
               <h2>APPS SQUARE</h2>
               <h3>FRONTEND DEVELOPER</h3>
-              <span className="date">JULY 2024 - PRESENT</span>
-              <p>Assisted in developing web applications using React and Next.js, focusing on dynamic and responsive UI 
-                components. Collaborated with team members, participated in code reviews, and learned modern 
+              <span className="date">JULY 2024 - SEPTEMBER 2024</span>
+              <p>Assisted in developing web applications using React and Next.js, focusing on dynamic and responsive UI
+                components. Collaborated with team members, participated in code reviews, and learned modern
                 development practices.</p>
             </div>
           </div>
