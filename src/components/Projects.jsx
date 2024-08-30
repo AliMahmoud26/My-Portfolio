@@ -51,8 +51,8 @@ const Projects = () => {
             <div className="content">
               <span>WEBSITE</span>
               <span className='tech-used'>React JS & Sass</span>
+              <span className='tech-used'>Meta Frontend Capstone Project</span>
               <h2>Little Lemon Restaurant</h2>
-              <h2>Meta Frontend Capstone Project</h2>
               <div className="icons">
                 <a href="https://little-lemon-silk.vercel.app/" target='_blank' title='Live Site'><MdArrowOutward /></a>
                 <a href="https://github.com/AliMahmoud26/Meta-Frontend-Capstone-Project" target='_blank' title='Github Repo'><FaGithub /></a>
