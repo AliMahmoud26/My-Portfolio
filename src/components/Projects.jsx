@@ -1,10 +1,11 @@
 import React from 'react'
 import { FaGithub } from 'react-icons/fa'
 import { MdArrowOutward } from 'react-icons/md'
-import GymFit from '../../public/gallery/Project1.jpeg'
+// import GymFit from '../../public/gallery/Project1.jpeg'
 import Bakery from '../../public/gallery/Project2.jpg'
 import RealState from '../../public/gallery/realstate2.jpg'
 import eCommerce from '../../public/gallery/ecommerce5.jpg'
+import LittleLemon from '../../public/gallery/littleLemon4.jpeg'
 import SouthEgypt from '../../src/assets/south.jpeg'
 
 const Projects = () => {
@@ -29,19 +30,6 @@ const Projects = () => {
               <span className='important'>Note: This repo is just to show that i know how to write React code and it will be removed and replaced with better projects. Thanks for your understanding.</span>
             </div>
           </div> */}
-          {/* <div className="project">
-            <div className="img">
-              <img src={SouthEgypt} alt="Project1" />
-            </div>
-            <div className="content">
-              <span>WEBSITE</span>
-              <span className='tech-used'>MERN STACK Technologies</span>
-              <h2>South Egypt Travels</h2>
-              <div className="icons">
-                <a href="https://github.com/AliMahmoud26/South-Egypt-Travels" target='_blank' title='Github Repo'><FaGithub /></a>
-              </div>
-            </div>
-          </div> */}
           <div className="project">
             <div className="img">
               <img src={Bakery} alt="Project2" />
@@ -53,6 +41,21 @@ const Projects = () => {
               <div className="icons">
                 <a href="https://main--freshbaguettes.netlify.app/" target='_blank' title='Live Site'><MdArrowOutward /></a>
                 <a href="https://github.com/AliMahmoud26/Baguettes--store" target='_blank' title='Github Repo'><FaGithub /></a>
+              </div>
+            </div>
+          </div>
+          <div className="project">
+            <div className="img">
+              <img src={LittleLemon} alt="Project1" />
+            </div>
+            <div className="content">
+              <span>WEBSITE</span>
+              <span className='tech-used'>React JS & Sass</span>
+              <h2>Little Lemon Restaurant</h2>
+              <h2>Meta Frontend Capstone Project</h2>
+              <div className="icons">
+                <a href="https://little-lemon-silk.vercel.app/" target='_blank' title='Live Site'><MdArrowOutward /></a>
+                <a href="https://github.com/AliMahmoud26/Meta-Frontend-Capstone-Project" target='_blank' title='Github Repo'><FaGithub /></a>
               </div>
             </div>
           </div>
