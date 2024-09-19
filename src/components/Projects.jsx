@@ -6,7 +6,7 @@ import Bakery from '../../public/gallery/Project2.jpg'
 // import RealState from '../../public/gallery/realstate2.jpg'
 import eCommerce from '../../public/gallery/ecommerce5.jpg'
 import LittleLemon from '../../public/gallery/littleLemon4.jpeg'
-import Dashboard from '../../public/gallery/dashboard.png'
+import Dashboard from '../../public/gallery/dashboard2.jpg'
 // import SouthEgypt from '../../src/assets/south.jpeg'
 
 const Projects = () => {
@@ -31,7 +31,7 @@ const Projects = () => {
               <span className='important'>Note: This repo is just to show that i know how to write React code and it will be removed and replaced with better projects. Thanks for your understanding.</span>
             </div>
           </div> */}
-          <div className="project">
+          <div className="project bakery">
             <div className="img">
               <img src={Bakery} alt="Project2" />
             </div>
@@ -45,7 +45,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="project">
+          <div className="project restaurant">
             <div className="img">
               <img src={LittleLemon} alt="Project1" />
             </div>
@@ -60,14 +60,14 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="project">
+          <div className="project ecommerce">
             <div className="img">
               <img src={eCommerce} alt="Project4" />
             </div>
             <div className="content">
               <span>WEBSITE</span>
               <span className='tech-used'>Full MERN STACK</span>
-              <span className='tech-used' style={{color: 'aqua', fontWeight:'bold'}}>still under development...</span>
+              <span className='tech-used' style={{color: 'aqua', fontWeight:'bold'}}> under development...</span>
               <h2>e-Commerce Application</h2>
               <div className="icons">
                 <a href="https://mallmarkt.vercel.app/" target='_blank' title='Live Site'><MdArrowOutward /></a>
@@ -75,15 +75,15 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="project">
+          <div className="project dashboard">
             <div className="img">
               <img src={Dashboard} alt="Project4" />
             </div>
             <div className="content">
-              <span>Control Panel Application</span>
-              <span className='tech-used'>Full MERN STACK</span>
-              <span className='tech-used' style={{color: 'aqua', fontWeight:'bold'}}>still under development...</span>
-              <h2>MallMarkt Control Panel Application</h2>
+              <span>DASHBOARD APPLICATION</span>
+              <span className='tech-used'>NEXT JS & TAILWIND</span>
+              <span className='tech-used' style={{color: 'aqua', fontWeight:'bold'}}> under development...</span>
+              <h2>MallMarkt Control Panel</h2>
               <div className="icons">
                 <a href="https://realtor-zeta-ivory.vercel.app/" target='_blank' title='Live Site'><MdArrowOutward /></a>
                 <a href="https://github.com/AliMahmoud26/Real-State-Application" target='_blank' title='Github Repo'><FaGithub /></a>
