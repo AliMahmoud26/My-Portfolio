@@ -3,10 +3,11 @@ import { FaGithub } from 'react-icons/fa'
 import { MdArrowOutward } from 'react-icons/md'
 // import GymFit from '../../public/gallery/Project1.jpeg'
 import Bakery from '../../public/gallery/Project2.jpg'
-import RealState from '../../public/gallery/realstate2.jpg'
+// import RealState from '../../public/gallery/realstate2.jpg'
 import eCommerce from '../../public/gallery/ecommerce5.jpg'
 import LittleLemon from '../../public/gallery/littleLemon4.jpeg'
-import SouthEgypt from '../../src/assets/south.jpeg'
+import Dashboard from '../../public/gallery/dashboard.png'
+// import SouthEgypt from '../../src/assets/south.jpeg'
 
 const Projects = () => {
   return (
@@ -76,13 +77,13 @@ const Projects = () => {
           </div>
           <div className="project">
             <div className="img">
-              <img src={RealState} alt="Project4" />
+              <img src={Dashboard} alt="Project4" />
             </div>
             <div className="content">
-              <span>WEBSITE</span>
+              <span>Control Panel Application</span>
               <span className='tech-used'>Full MERN STACK</span>
               <span className='tech-used' style={{color: 'aqua', fontWeight:'bold'}}>still under development...</span>
-              <h2>Real State Application</h2>
+              <h2>MallMarkt Control Panel Application</h2>
               <div className="icons">
                 <a href="https://realtor-zeta-ivory.vercel.app/" target='_blank' title='Live Site'><MdArrowOutward /></a>
                 <a href="https://github.com/AliMahmoud26/Real-State-Application" target='_blank' title='Github Repo'><FaGithub /></a>
