@@ -13,7 +13,7 @@ const Hero = () => {
             {/* <MdOutlineWavingHand className='hand-icon' /> */}
             <span className='name'>Hello I'm</span><br />
             <span className='name'>Ali Mahmoud</span><br />
-            <p className="info">Dedicated full-stack developer with expertise in HTML5, CSS3, JavaScript, React.js, TypeScript, Node.js, Express, and MongoDB. Seeking opportunities to contribute to impactful web projects and collaborate within dynamic teams to further enhance proficiency in frontend development and emerging technologies.</p>
+            <p className="info">Dedicated full-stack developer with expertise in HTML5, CSS3, JavaScript, React.js, TypeScript, Next Js, Node.js, Express, and MongoDB. Seeking opportunities to contribute to impactful web projects and collaborate within dynamic teams to further enhance proficiency in frontend development and emerging technologies.</p>
           </div>
           <div className="img">
             <img src={Img} alt="Hero Image" />
