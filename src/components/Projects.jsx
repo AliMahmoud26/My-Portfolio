@@ -85,8 +85,8 @@ const Projects = () => {
               <span className='tech-used' style={{color: 'aqua', fontWeight:'bold'}}> under development...</span>
               <h2>MallMarkt Control Panel</h2>
               <div className="icons">
-                <a href="https://mallmarkt-control-panel.vercel.app/" target='_blank' title='Live Site'><MdArrowOutward /></a>
-                <a href="https://github.com/AliMahmoud26/Apps-Square-Final-Project" target='_blank' title='Github Repo'><FaGithub /></a>
+                <a href="https://mallmarkt-dashboard.vercel.app/" target='_blank' title='Live Site'><MdArrowOutward /></a>
+                <a href="https://github.com/AliMahmoud26/MallMarkt-Control-Panel" target='_blank' title='Github Repo'><FaGithub /></a>
               </div>
             </div>
           </div>

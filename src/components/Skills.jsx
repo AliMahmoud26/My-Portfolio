@@ -12,6 +12,7 @@ const Skills = () => {
             <p>Javascript & ES6</p>
             <p>TypeScript</p>
             <p>React JS</p>
+            <p>Next JS</p>
             <p>Sass</p>
             <p>Bootstrap5</p>
             <p>Tailwind CSS</p>
