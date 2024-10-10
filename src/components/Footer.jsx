@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="other-links">
           <div className="email">
             <h4>REACH ME AT</h4>
-            <a href="mailto:alimahmoud.cs@outlook.com" style={{marginRight: "1.5rem"}}>Outlook</a>
+            <a href="mailto:alimahmoud.cs@outlook.com" style={{marginRight: "1.35rem"}}>Outlook</a>
             <a href="mailto:alimah.engineer@gmail.com">Gmail</a>
           </div>
           <div className="page-links">
