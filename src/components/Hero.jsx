@@ -16,7 +16,7 @@ const Hero = () => {
             <p className="info">I’m a Passionate frontend developer skilled in building dynamic, user-friendly web applications using React and 
             Next.js. I aim to leverage my technical expertise and creative problem-solving abilities to build scalable, 
             responsive applications that enhance user experience. Looking for opportunities to further develop my skills, 
-            contribute to impactful projects, and grow within a collaboratives and forward-thinking teams.</p>
+            contribute to impactful projects, and grow within collaboratives and forward-thinking teams.</p>
           </div>
           <div className="img">
             <img src={Img} alt="Hero Image" />
