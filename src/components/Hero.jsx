@@ -13,7 +13,10 @@ const Hero = () => {
             {/* <MdOutlineWavingHand className='hand-icon' /> */}
             <span className='name'>Hello I'm</span><br />
             <span className='name'>Ali Mahmoud</span><br />
-            <p className="info">Dedicated full-stack developer with expertise in HTML5, CSS3, JavaScript, React.js, TypeScript, Next Js, Node.js, Express, and MongoDB. Seeking opportunities to contribute to impactful web projects and collaborate within dynamic teams to further enhance proficiency in frontend development and emerging technologies.</p>
+            <p className="info">I’m a Passionate frontend developer skilled in building dynamic, user-friendly web applications using React and 
+            Next.js. I aim to leverage my technical expertise and creative problem-solving abilities to build scalable, 
+            responsive applications that enhance user experience. Looking for opportunities to further develop my skills, 
+            contribute to impactful projects, and grow within a collaboratives and forward-thinking teams.</p>
           </div>
           <div className="img">
             <img src={Img} alt="Hero Image" />
