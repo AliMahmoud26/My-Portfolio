@@ -10,12 +10,12 @@ const Skills = () => {
           <div className="tech-skills">
             <p>HTML5 & CSS3</p>
             <p>Javascript & ES6</p>
+            <p>Sass/Scss</p>
+            <p>Tailwind CSS & Bootstrap5</p>
             <p>TypeScript</p>
-            <p>React JS</p>
-            <p>Next JS</p>
-            <p>Sass</p>
-            <p>Bootstrap5</p>
-            <p>Tailwind CSS</p>
+            <p>React.JS</p>
+            <p>Next.JS</p>
+            {/* <p>Figma, Vite & Framer Motion</p> */}
           </div>
         </div>
         <div className="card-details backend">
@@ -23,15 +23,19 @@ const Skills = () => {
           <div className="tech-skills">
             <p>Node Js</p>
             <p>Express Js</p>
-            <p>Mongo DB</p>
+            <p>MongoDB</p>
           </div>
         </div>
         <div className="card-details other">
-          <h2>OTHER</h2>
+          <h2>SOFT SKILLS</h2>
           <div className="tech-skills">
-            <p>Figma</p>
-            <p>Framer Motion</p>
-            <p>Vite</p>
+            <p>Effective Communication </p>
+            <p>Teamwork & Collaboration</p>
+            <p>Patience and Perseverance</p>
+            <p>Fast Learner</p>
+            <p>Problem-Solving</p>
+            <p>Adaptability</p>
+            <p>Responsibility</p>
           </div>
         </div>
       </div>
