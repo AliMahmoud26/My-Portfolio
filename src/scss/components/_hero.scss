@@ -133,8 +133,9 @@
         }
 
         .btn {
-            background-color: $lightBlue;
-            border: 2px solid $lightBlue;
+            background-color: $darkBlue;
+            border: 2px solid $darkBlue;
+            // color: $lightBlue;
             border-radius: 2rem;
             padding: .75rem 2rem;
             width: fit-content;
@@ -142,8 +143,8 @@
             transition: $transition;
 
             &:hover {
-                background-color: $darkBlue;
-                border-color: $darkBlue;
+                // background-color: $lightBlue;
+                // color: $light;
             }
 
             @include breakpoint-down(small) {
@@ -154,7 +155,7 @@
             > a {
                 @include flex-default;
                 gap: .5rem;
-                color: $light;
+                color: $lightBlue;
                 transition: $transition;
                 font: {
                     family: "Rowdies", cursive;
@@ -167,7 +168,7 @@
                 }
 
                 &:hover {
-                    color: $lightBlue;
+                    color: $light;
                 }
             }
             
