@@ -24,6 +24,11 @@
 
                 .position {
                     color: $light;
+                    text-transform: uppercase;
+                    font: {
+                        family: "Rowdies", cursive;
+                        weight: 600;
+                    }
 
                     @include breakpoint-down(small) {
                         font-size: .875rem;
@@ -128,12 +133,18 @@
         }
 
         .btn {
-            background-color: inherit;
+            background-color: $lightBlue;
             border: 2px solid $lightBlue;
             border-radius: 2rem;
             padding: .75rem 2rem;
             width: fit-content;
             margin-top: -4.5rem;
+            transition: $transition;
+
+            &:hover {
+                background-color: $darkBlue;
+                border-color: $darkBlue;
+            }
 
             @include breakpoint-down(small) {
                 padding: .5rem 1.5rem;
@@ -145,6 +156,10 @@
                 gap: .5rem;
                 color: $light;
                 transition: $transition;
+                font: {
+                    family: "Rowdies", cursive;
+                    weight: 600;
+                }
                 // font-size: 1.125rem;
 
                 @include breakpoint-down(small) {

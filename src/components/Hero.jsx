@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from '../assets/MyImg1.jpg';
-import CV from '../assets/Alis CV.pdf';
+import CV from '../assets/Academic Resume.pdf';
 import { FaDownload } from 'react-icons/fa';
 // import { MdOutlineWavingHand, MdWavingHand } from 'react-icons/md';
 
